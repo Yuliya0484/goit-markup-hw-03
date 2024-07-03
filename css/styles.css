@@ -1,3 +1,10 @@
+/* ----TOTAL SETS----*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   background: #fff;
@@ -6,10 +13,65 @@ body {
 
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: 1158px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+/* ----HEADER SETS---- */
+.nav-list {
+  display: inline-flex;
+  gap: 40px;
+}
+
+.contacts-list {
+  display: inline-flex;
+  text-align: justify;
+  gap: 40px;
+}
+
+.header-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: inline-flex;
 }
 
 .logo {
@@ -20,6 +82,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .header-logo-part {
@@ -32,6 +95,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-right: 40px;
 }
 
 .nav-link:hover,
@@ -55,8 +119,10 @@ a {
   color: #404bbf;
 }
 
-.hero-section {
+/* ----HERO SECTION ONE---- */
+.hero-containrer {
   background: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -66,6 +132,11 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
+  max-width: 496px;
+  margin: 0 auto;
+  padding-top: 188px;
+  padding-bottom: 48px;
 }
 
 .hero-btn {
@@ -77,6 +148,13 @@ a {
   letter-spacing: 0.04em;
   color: #fff;
   background: #4d5ae5;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 169px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 56px;
 }
 
 .hero-btn:hover,
@@ -84,24 +162,39 @@ a {
   background: #404bbf;
 }
 
+/* ----BENEFITS SECTION TWO---- */
+
+.benefits-title {
+  display: none;
+}
+
+.benefits-list {
+  display: flex;
+  padding: 120px 0;
+  gap: 24px;
+  margin: 0 auto;
+}
+
 .benefits-heading {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  text-align: left;
 }
 
 .benefits-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  text-align: left;
 }
-
+/* ----TEAM SECTION THREE----*/
 .team-section {
   background: #f4f4fd;
 }
 
+.team-container {
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -110,28 +203,29 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-items {
   background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: 264px;
+  height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.team-heading .team-text {
+  text-align: center;
+}
 .team-heading {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
-.team-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
+/* ----PORTFOLIO SECTION FOUR---- */
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -143,20 +237,15 @@ a {
 }
 
 .portfolio-heading {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
 }
 .portfolio-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
-.main-footer {
+/* ----FOOTER---- */
+.footer-container {
   background: #2e2f42;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-logo-part {
@@ -164,8 +253,6 @@ a {
 }
 
 .footer-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
