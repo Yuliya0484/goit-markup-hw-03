@@ -15,20 +15,18 @@ p,
 h1,
 h2,
 h3 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 ul {
   list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
-  display: inline-block;
+  display: block;
 }
 
 img {
@@ -121,9 +119,6 @@ img {
   padding: 24px 0;
   display: flex;
   gap: 40px;
-}
-
-.contact-items {
 }
 
 .contacts-link {
