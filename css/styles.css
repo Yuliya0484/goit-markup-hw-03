@@ -11,6 +11,14 @@ body {
   color: #434455;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style-type: none;
   margin-top: 0;
@@ -20,24 +28,13 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-p,
-h1,
-h2,
-h3 {
-  margin-top: 0;
-  margin-bottom: 0;
+  display: inline-block;
 }
 
 img {
   display: block;
   max-width: 100%;
   object-fit: cover;
-}
-
-a {
-  display: inline-block;
 }
 
 .container {
@@ -59,34 +56,6 @@ a {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-/* ----HEADER SETS---- */
-.header-container {
-  border-bottom: 1px solid #e7e9fc;
-  background: #fff;
-  padding: 24px 0;
-
-  display: flex;
-  margin: 0 auto;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-
-.header-logo {
-  padding-right: 76px;
-}
-.nav-list {
-  display: flex;
-  gap: 40px;
-  padding-right: 332px;
-}
-
-.contacts-list {
-  display: flex;
-  gap: 40px;
-}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -97,9 +66,35 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+/* ----HEADER SETS---- */
+.main-header {
+  border-bottom: 1px solid #e7e9fc;
+  background: #fff;
+}
+.header-container {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-nav {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 76px;
+}
 
 .header-logo-part {
   color: #2e2f42;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  padding-right: 332px;
 }
 
 .nav-link {
@@ -118,6 +113,13 @@ a {
 .contacts {
   font-style: normal;
 }
+
+.contacts-list {
+  padding: 24px 0;
+  display: flex;
+  gap: 40px;
+}
+
 .contacts-link {
   font-weight: 400;
   font-size: 16px;
@@ -132,11 +134,16 @@ a {
 }
 
 /* ----HERO SECTION ONE---- */
+
 .hero-section {
+  padding: 188px 0;
   background: #2e2f42;
+
+  max-height: 600px;
 }
 .hero-container {
   padding: 188px 0;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -146,11 +153,11 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin: 0 auto;
   margin-bottom: 48px;
   max-width: 496px;
-  margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 48px;
+  max-height: 120px;
+  align-items: center;
 }
 
 .hero-btn {
@@ -164,9 +171,8 @@ a {
   background: #4d5ae5;
   border-radius: 4px;
   text-align: center;
-  min-width: 169px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 169px;
+  margin: 0 auto;
   display: block;
   height: 56px;
   border: none;
@@ -210,10 +216,10 @@ a {
 /* ----TEAM SECTION THREE----*/
 .team-section {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-container {
-  padding: 120px 0;
 }
 
 .team-list {
@@ -235,22 +241,38 @@ a {
   background-color: #ffffff;
   margin: 0 auto;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  width: 264px;
+  width: calc((100% - 3 * 24px) / 4);
   height: 380px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.card-container {
+  padding: 32px 0;
+  margin: 0 auto;
+  max-width: 232px;
+  height: 56px;
+}
 .team-heading .team-text {
   text-align: center;
 }
 .team-heading {
-  margin-top: 32px;
+  margin: 0 auto;
   margin-bottom: 8px;
 }
 
+.team-text {
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
 /* ----PORTFOLIO SECTION FOUR---- */
+.portfolio-section {
+  padding: 120px 0 120px 0;
+}
+
+.portfolio-container {
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -259,21 +281,41 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 
-.portfolio-heading {
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
-.portfolio-text {
+
+.portfolo-items {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-content {
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 /* ----FOOTER---- */
 .main-footer {
   background: #2e2f42;
-  padding: 120px 0;
+  padding: 100px 0;
 }
 .footer-container {
   display: flex;
   flex-direction: column;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-part {
