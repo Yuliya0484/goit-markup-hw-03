@@ -103,10 +103,6 @@ img {
   padding: 24px 0;
 }
 
-.nav-link-contacts {
-  padding-right: 332px;
-}
-
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
@@ -114,6 +110,7 @@ img {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-list {
@@ -254,20 +251,14 @@ img {
 
 .card-container {
   padding: 32px 0;
-  margin: 0 auto;
-  max-width: 232px;
-  height: 56px;
 }
 
 .team-heading {
-  margin: 0 auto;
   margin-bottom: 8px;
   text-align: center;
 }
 
 .team-text {
-  margin: 0 auto;
-  padding-bottom: 32px;
   text-align: center;
 }
 
@@ -301,9 +292,8 @@ img {
 
 .portfolio-content {
   padding: 32px 16px;
-  border-bottom: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .portfolio-heading {
